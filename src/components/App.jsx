@@ -13,7 +13,7 @@ function App() {
     },
     {
       name: "Cats",
-      link: "https://9w061x.csb.app/cats",
+      link: "./cats",
       image: "/images/cats.jpg"
     },
     {

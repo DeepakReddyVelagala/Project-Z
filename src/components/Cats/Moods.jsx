@@ -5,7 +5,8 @@ function Mood(props) {
     { name: "Sad" },
     { name: "Angry" },
     { name: "Cute" },
-    { name: "Dumb" }
+    { name: "Dumb" },
+    { name: "Lazy"}
   ];
   return (
     <div className="Cat-Mood">
