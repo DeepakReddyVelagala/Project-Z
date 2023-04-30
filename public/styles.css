@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  text-align: center;
+  font-size: 75px;
+  font-weight: 100;
+}
+
+.field-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.field-box {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 300px;
+  /*change font size respnsive*/
+  font-size: 3.2vmin;
+  margin: 10px;
+  box-sizing: border-box;
+  color: maroon;
+  background-color: #f5ba13;
+  bottom: 100px;
+  box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.3);
+}
+
+.link-style {
+  text-decoration: none;
+  color: maroon;
+}
+img.hover-image {
+  position: relative;
+  top: -300px;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.field-box:hover .hover-image {
+  transition: opacity 250ms;
+  opacity: 1;
+}
+
+.cats-tray {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  font-family: "Mclaren", cursive;
+  padding: 100px;
+}
+
+.Cat-Mood {
+  display: flex;
+  flex-wrap: wrap;
+}
