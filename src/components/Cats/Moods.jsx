@@ -6,8 +6,7 @@ function Mood(props) {
     { name: "Angry" },
     { name: "Cute" },
     { name: "Dumb" },
-    { name: "Lazy"},
-    { name: "chal bro"}
+    { name: "Lazy"}
   ];
   return (
     <div className="Cat-Mood">
@@ -19,6 +18,6 @@ function Mood(props) {
 }
 
 function Tray(props) {
-  return <div className="cats-tray">{props.name}</div>;
+  return <div className="Cats-Tray">{props.name}</div>;
 }
 export default Mood;

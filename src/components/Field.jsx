@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // import { unstable_renderSubtreeIntoContainer } from "react-dom";
 
@@ -17,28 +17,11 @@ function Field(props) {
 }
 
 function FieldSmol(props) {
-  const [hover, setHover] = useState(false);
-
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
 
   return (
-    <div
-      className="field-box"
-      // onMouseEnter={handleMouseEnter}
-      // onMouseLeave={handleMouseLeave}
-    >
-      {props.title}
+    <div className="Ovelapping-Class">
+      <div className="field-box"> {props.title} </div>
       <img className="hover-image" src={props.image} alt=""></img>
-
-      {/* {hover && <img className="hover-image" src={props.image} alt=""></img>} */}
-      {/* {!hover && props.title} */}
-      {/* <img className="hover-image" src={props.image} alt=""></img> */}
     </div>
   );
 }

@@ -29,7 +29,8 @@ header h1 {
 .field-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px;
+  justify-content: center;
+  /* padding: 100px; */
 }
 
 .field-box {
@@ -44,37 +45,52 @@ header h1 {
   box-sizing: border-box;
   color: maroon;
   background-color: #f5ba13;
-  bottom: 100px;
+  /* bottom: 100px; */
   box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.3);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.Ovelapping-Class{
+  display: grid;
 }
 
 .link-style {
   text-decoration: none;
   color: maroon;
 }
-img.hover-image {
-  position: relative;
-  top: -300px;
+.hover-image {
   height: 300px;
   width: 300px;
   border-radius: 20px;
+  margin:10px;
+  grid-column: 1;
+  grid-row: 1;
   opacity: 0;
 }
 
-.field-box:hover .hover-image {
+.hover-image:hover{
   transition: opacity 250ms;
   opacity: 1;
 }
 
-.cats-tray {
+.Cats-Tray {
   color: white;
-  background-color: black;
+  background-color: #f5ba13;
+  width:200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  text-align: center;
   font-size: 20px;
   font-family: "Mclaren", cursive;
-  padding: 100px;
+  margin:10px;
 }
 
 .Cat-Mood {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
+
+
