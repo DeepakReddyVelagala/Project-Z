@@ -22,15 +22,15 @@ function App() {
       image: "/images/Mani_Ratnam.png"
     },
     {
-      name: "Education",
-      link: "https://www.google.com",
+      name: "Edventures",
+      link: "./edventures",
       image: "/images/study.png"
     }
   ];
 
   return (
     <div>
-      <Header />
+      <Header title="Jack Field" />
       <Field data={icons} />
     </div>
   );
