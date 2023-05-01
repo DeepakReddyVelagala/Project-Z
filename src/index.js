@@ -2,13 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import Cat from "./components/Cats/Home";
-import { Route, Routes, Link, BrowserRouter as Router } from "react-router-dom";
+import Edventures from "./components/Edventures/Home";
+import MLhome from "./components/Edventures/ML/Home";
+import CPhome from "./components/Edventures/CP/Home";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <Router>
     <Routes>
       <Route exact path="/" element={<App />} />
       <Route exact path="/cats" element={<Cat />} />
+      <Route exact path="/edventures" element={<Edventures />} />
+      <Route exact path="/ML" element={<MLhome />} />
+      <Route exact path="/CP" element={<CPhome />} />
     </Routes>
   </Router>,
   document.getElementById("root")
